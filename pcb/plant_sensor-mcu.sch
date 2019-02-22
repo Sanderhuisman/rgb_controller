@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:plant_sensor-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title "MCU"
 Date "2019-02-22"
 Rev ""
@@ -729,4 +728,34 @@ NoConn ~ 2250 5400
 NoConn ~ 2250 5800
 Text Label 10100 4750 1    50   ~ 0
 LED
+Text Label 2150 2050 0    50   ~ 0
+I2C1_SDA
+Text Label 2150 2150 0    50   ~ 0
+I2C1_SCL
+Text Label 2150 2250 0    50   ~ 0
+TEMP_IRQ
+Text HLabel 2700 2250 2    50   Input ~ 0
+TEMP_IRQ
+Text HLabel 2700 2150 2    50   BiDi ~ 0
+I2C1_SCL
+Text HLabel 2700 2050 2    50   BiDi ~ 0
+I2C1_SDA
+Wire Wire Line
+	2700 2050 2150 2050
+Wire Wire Line
+	2150 2150 2700 2150
+Wire Wire Line
+	2700 2250 2150 2250
+Wire Wire Line
+	5100 4200 4500 4200
+Wire Wire Line
+	4500 4100 5100 4100
+Wire Wire Line
+	5100 4000 4500 4000
+Text Label 4500 4000 0    50   ~ 0
+TEMP_IRQ
+Text Label 4500 4100 0    50   ~ 0
+I2C1_SCL
+Text Label 4500 4200 0    50   ~ 0
+I2C1_SDA
 $EndSCHEMATC

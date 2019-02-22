@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:plant_sensor-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "Overview"
 Date "2019-02-22"
 Rev ""
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 6700 2500 1900 1400
+S 6700 2500 700  1050
 U 5C6DADA9
 F0 "BLE" 50
 F1 "plant_sensor-ble.sch" 50
@@ -153,7 +152,7 @@ $EndComp
 Wire Wire Line
 	2150 2200 2150 2300
 $Sheet
-S 4850 2500 1450 1400
+S 4850 2500 1450 1800
 U 5C7262D1
 F0 "MCU" 50
 F1 "plant_sensor-mcu.sch" 50
@@ -163,6 +162,9 @@ F4 "SPI1_MOSI" O R 6300 2850 50
 F5 "BLE_nCS" O R 6300 3150 50 
 F6 "BLE_IRQ" O R 6300 3250 50 
 F7 "BLE_nRESET" O R 6300 3350 50 
+F8 "TEMP_IRQ" I R 6300 4150 50 
+F9 "I2C1_SCL" B R 6300 3900 50 
+F10 "I2C1_SDA" B R 6300 4000 50 
 $EndSheet
 Wire Wire Line
 	6300 2950 6700 2950
@@ -176,4 +178,19 @@ Wire Wire Line
 	6700 3250 6300 3250
 Wire Wire Line
 	6700 3350 6300 3350
+$Sheet
+S 6700 3750 700  550 
+U 5C708F8B
+F0 "Temperature" 50
+F1 "plant_sensor-temp.sch" 50
+F2 "TEMP_SDA" B L 6700 3900 50 
+F3 "TEMP_SCL" B L 6700 4000 50 
+F4 "TEMP_IRQ" O L 6700 4150 50 
+$EndSheet
+Wire Wire Line
+	6300 4000 6700 4000
+Wire Wire Line
+	6700 3900 6300 3900
+Wire Wire Line
+	6300 4150 6700 4150
 $EndSCHEMATC
