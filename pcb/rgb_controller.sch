@@ -17,13 +17,13 @@ $Sheet
 S 6700 2500 700  1050
 U 5C6DADA9
 F0 "BLE" 50
-F1 "plant_sensor-ble.sch" 50
-F2 "BLE_nRESET" I L 6700 3350 50 
-F3 "BLE_nCS" I L 6700 3150 50 
-F4 "SPI_MOSI" I L 6700 2850 50 
-F5 "SPI_MISO" O L 6700 2950 50 
-F6 "SPI_CLK" I L 6700 2750 50 
-F7 "BLE_IRQ" O L 6700 3250 50 
+F1 "rgb_controller-ble.sch" 50
+F2 "BLE_nRESET" I L 6700 3350 50
+F3 "BLE_nCS" I L 6700 3150 50
+F4 "SPI_MOSI" I L 6700 2850 50
+F5 "SPI_MISO" O L 6700 2950 50
+F6 "SPI_CLK" I L 6700 2750 50
+F7 "BLE_IRQ" O L 6700 3250 50
 $EndSheet
 $Comp
 L Memory_EEPROM:M95256-WMN6P U1
@@ -34,7 +34,7 @@ F 1 "M95256-WMN6P" H 10100 6137 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 10100 5750 50  0001 C CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/9d/75/f0/3e/76/00/4c/0b/CD00103810.pdf/files/CD00103810.pdf/jcr:content/translations/en.CD00103810.pdf" H 10100 5750 50  0001 C CNN
 	1    10100 5750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:+3V3 #PWR06
@@ -45,7 +45,7 @@ F 1 "+3V3" H 5115 5873 50  0000 C CNN
 F 2 "" H 5100 5700 50  0001 C CNN
 F 3 "" H 5100 5700 50  0001 C CNN
 	1    5100 5700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:VDD #PWR07
@@ -56,7 +56,7 @@ F 1 "VDD" H 5317 5873 50  0000 C CNN
 F 2 "" H 5300 5700 50  0001 C CNN
 F 3 "" H 5300 5700 50  0001 C CNN
 	1    5300 5700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	5300 5700 5300 5750
@@ -73,7 +73,7 @@ F 1 "+BATT" H 1715 2373 50  0000 C CNN
 F 2 "" H 1700 2200 50  0001 C CNN
 F 3 "" H 1700 2200 50  0001 C CNN
 	1    1700 2200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	1700 2200 1700 2950
@@ -86,7 +86,7 @@ F 1 "1uF X5R" H 1415 2355 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1338 2250 50  0001 C CNN
 F 3 "~" H 1300 2400 50  0001 C CNN
 	1    1300 2400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:+BATT #PWR01
@@ -97,7 +97,7 @@ F 1 "+BATT" H 1315 2373 50  0000 C CNN
 F 2 "" H 1300 2200 50  0001 C CNN
 F 3 "" H 1300 2200 50  0001 C CNN
 	1    1300 2200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	1300 2250 1300 2200
@@ -112,7 +112,7 @@ F 1 "GND" H 1305 2427 50  0000 C CNN
 F 2 "" H 1300 2600 50  0001 C CNN
 F 3 "" H 1300 2600 50  0001 C CNN
 	1    1300 2600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Device:Battery_Cell BT1
@@ -123,7 +123,7 @@ F 1 "CR2032" H 2268 2505 50  0000 L CNN
 F 2 "Connectors:CR2032H" V 2150 2560 50  0001 C CNN
 F 3 "~" V 2150 2560 50  0001 C CNN
 	1    2150 2500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:GND #PWR05
@@ -134,7 +134,7 @@ F 1 "GND" H 2155 2477 50  0000 C CNN
 F 2 "" H 2150 2650 50  0001 C CNN
 F 3 "" H 2150 2650 50  0001 C CNN
 	1    2150 2650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	2150 2650 2150 2600
@@ -147,7 +147,7 @@ F 1 "+BATT" H 2165 2373 50  0000 C CNN
 F 2 "" H 2150 2200 50  0001 C CNN
 F 3 "" H 2150 2200 50  0001 C CNN
 	1    2150 2200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	2150 2200 2150 2300
@@ -155,16 +155,16 @@ $Sheet
 S 4850 2500 1450 1800
 U 5C7262D1
 F0 "MCU" 50
-F1 "plant_sensor-mcu.sch" 50
-F2 "SPI1_CLK" O R 6300 2750 50 
-F3 "SPI1_MISO" I R 6300 2950 50 
-F4 "SPI1_MOSI" O R 6300 2850 50 
-F5 "BLE_nCS" O R 6300 3150 50 
-F6 "BLE_IRQ" O R 6300 3250 50 
-F7 "BLE_nRESET" O R 6300 3350 50 
-F8 "TEMP_IRQ" I R 6300 4150 50 
-F9 "I2C1_SCL" B R 6300 3900 50 
-F10 "I2C1_SDA" B R 6300 4000 50 
+F1 "rgb_controller-mcu.sch" 50
+F2 "SPI1_CLK" O R 6300 2750 50
+F3 "SPI1_MISO" I R 6300 2950 50
+F4 "SPI1_MOSI" O R 6300 2850 50
+F5 "BLE_nCS" O R 6300 3150 50
+F6 "BLE_IRQ" O R 6300 3250 50
+F7 "BLE_nRESET" O R 6300 3350 50
+F8 "TEMP_IRQ" I R 6300 4150 50
+F9 "I2C1_SCL" B R 6300 3900 50
+F10 "I2C1_SDA" B R 6300 4000 50
 $EndSheet
 Wire Wire Line
 	6300 2950 6700 2950
@@ -179,13 +179,13 @@ Wire Wire Line
 Wire Wire Line
 	6700 3350 6300 3350
 $Sheet
-S 6700 3750 700  550 
+S 6700 3750 700  550
 U 5C708F8B
 F0 "Temperature" 50
-F1 "plant_sensor-temp.sch" 50
-F2 "TEMP_SDA" B L 6700 3900 50 
-F3 "TEMP_SCL" B L 6700 4000 50 
-F4 "TEMP_IRQ" O L 6700 4150 50 
+F1 "rgb_controller-temp.sch" 50
+F2 "TEMP_SDA" B L 6700 3900 50
+F3 "TEMP_SCL" B L 6700 4000 50
+F4 "TEMP_IRQ" O L 6700 4150 50
 $EndSheet
 Wire Wire Line
 	6300 4000 6700 4000
