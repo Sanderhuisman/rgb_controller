@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:rgb_controller-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 7
 Title "Temperature sensor"
-Date "2019-02-22"
+Date "2019-02-23"
 Rev ""
 Comp "HuizePD"
 Comment1 ""
@@ -27,16 +28,16 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm75b.pdf" H 6000 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 4050 5200 4050
+	5600 4050 5050 4050
 Wire Wire Line
-	5200 4150 5600 4150
-Text Label 5200 4050 0    50   ~ 0
+	5050 4150 5600 4150
+Text Label 5050 4050 0    50   ~ 0
 TEMP_SDA
-Text Label 5200 4150 0    50   ~ 0
+Text Label 5050 4150 0    50   ~ 0
 TEMP_SCL
 Wire Wire Line
-	5600 4250 5200 4250
-Text Label 5200 4250 0    50   ~ 0
+	5600 4250 5450 4250
+Text Label 5050 4250 0    50   ~ 0
 TEMP_IRQ
 $Comp
 L power:GND #PWR?
@@ -116,7 +117,7 @@ AR Path="/5C709274" Ref="C?"  Part="1"
 AR Path="/5C708F8B/5C709274" Ref="C9"  Part="1" 
 F 0 "C9" H 6965 4546 50  0000 L CNN
 F 1 "100nF" H 6965 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6888 4350 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6888 4350 50  0001 C CNN
 F 3 "~" H 6850 4500 50  0001 C CNN
 	1    6850 4500
 	1    0    0    -1  
@@ -138,12 +139,43 @@ F 3 "" H 6850 4700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6850 4700 6850 4650
-Text HLabel 5200 4050 0    50   BiDi ~ 0
+Text HLabel 5050 4050 0    50   BiDi ~ 0
 TEMP_SDA
-Text HLabel 5200 4150 0    50   BiDi ~ 0
+Text HLabel 5050 4150 0    50   BiDi ~ 0
 TEMP_SCL
-Text HLabel 5200 4250 0    50   Output ~ 0
+Text HLabel 5050 4250 0    50   Output ~ 0
 TEMP_IRQ
 Text Notes 6600 3750 0    50   ~ 0
 STLM75
+$Comp
+L Device:R R21
+U 1 1 5C7A312B
+P 5450 3850
+F 0 "R21" H 5520 3896 50  0000 L CNN
+F 1 "10K" H 5520 3805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5380 3850 50  0001 C CNN
+F 3 "~" H 5450 3850 50  0001 C CNN
+	1    5450 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4000 5450 4250
+Connection ~ 5450 4250
+Wire Wire Line
+	5450 4250 5050 4250
+Wire Wire Line
+	5450 3700 5450 3600
+$Comp
+L power:VDD #PWR?
+U 1 1 5C7A3453
+P 5450 3600
+AR Path="/5C7A3453" Ref="#PWR?"  Part="1" 
+AR Path="/5C708F8B/5C7A3453" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 5450 3450 50  0001 C CNN
+F 1 "VDD" H 5467 3773 50  0000 C CNN
+F 2 "" H 5450 3600 50  0001 C CNN
+F 3 "" H 5450 3600 50  0001 C CNN
+	1    5450 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

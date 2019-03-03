@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name IRF3205SPBF)(type Legacy)(uri D:/huism/Git/huizepd/rgb_controller/pcb/lib/IRF3205SPBF/IRF3205SPBF.lib)(options "")(descr ""))
+)

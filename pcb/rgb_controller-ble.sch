@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:rgb_controller-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 7
 Title "BLE"
-Date "2019-02-22"
+Date "2019-02-23"
 Rev ""
 Comp "HuizePD"
 Comment1 ""
