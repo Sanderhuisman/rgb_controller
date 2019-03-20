@@ -12,7 +12,7 @@ Comp "HuizePD"
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Author: Sander Huisman"
 $EndDescr
 $Sheet
 S 6700 2500 700  1050

@@ -6,13 +6,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 7
 Title "Light Sensor"
-Date ""
+Date "2019-02-23"
 Rev ""
-Comp ""
+Comp "HuizePD"
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Author: Sander Huisman"
 $EndDescr
 Wire Wire Line
 	6100 3550 6200 3550

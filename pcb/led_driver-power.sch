@@ -12,7 +12,7 @@ Comp "HuizePD"
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Author: Sander Huisman"
 $EndDescr
 $Comp
 L Regulator_Linear:LD3985M33R_SOT23 IC6
