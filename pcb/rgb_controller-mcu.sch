@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:rgb_controller-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -289,7 +288,7 @@ AR Path="/5C72923F" Ref="SW?"  Part="1"
 AR Path="/5C7262D1/5C72923F" Ref="SW1"  Part="1" 
 F 0 "SW1" V 8354 5598 50  0000 L CNN
 F 1 "SW_Push" V 8445 5598 50  0000 L CNN
-F 2 "" H 8400 5650 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 8400 5650 50  0001 C CNN
 F 3 "" H 8400 5650 50  0001 C CNN
 	1    8400 5450
 	0    1    1    0   
@@ -1055,23 +1054,23 @@ USB_RENUMn
 $Comp
 L Sensor_Gas:CCS811 U4
 U 1 1 5C7A0E9F
-P 17900 2550
-F 0 "U4" H 17900 3228 50  0000 C CNN
-F 1 "CCS811" H 17900 3137 50  0000 C CNN
-F 2 "Package_LGA:AMS_LGA-10-1EP_2.7x4mm_P0.6mm" H 17900 1950 50  0001 C CNN
-F 3 "http://ams.com/eng/Products/Environmental-Sensors/Air-Quality-Sensors/CCS811" H 17900 2350 50  0001 C CNN
-	1    17900 2550
+P 17000 2750
+F 0 "U4" H 17000 3428 50  0000 C CNN
+F 1 "CCS811" H 17000 3337 50  0000 C CNN
+F 2 "Package_LGA:AMS_LGA-10-1EP_2.7x4mm_P0.6mm" H 17000 2150 50  0001 C CNN
+F 3 "http://ams.com/eng/Products/Environmental-Sensors/Air-Quality-Sensors/CCS811" H 17000 2550 50  0001 C CNN
+	1    17000 2750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Sensor:BME280 U7
 U 1 1 5C7A1D5A
-P 19150 2500
-F 0 "U7" H 18720 2546 50  0000 R CNN
-F 1 "BME280" H 18720 2455 50  0000 R CNN
-F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 19150 2300 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf" H 19150 2300 50  0001 C CNN
-	1    19150 2500
+P 18250 2700
+F 0 "U7" H 17820 2746 50  0000 R CNN
+F 1 "BME280" H 17820 2655 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 18250 2500 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf" H 18250 2500 50  0001 C CNN
+	1    18250 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1138,10 +1137,18 @@ F 3 "" H 4300 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6200 3500 6750 3500
-Text Label 6750 3500 0    50   ~ 0
+Text Label 6750 4200 0    50   ~ 0
 USB_RENUMn
 Text Label 4500 4100 0    50   ~ 0
 I2C1_SCL
 Text Label 4500 4200 0    50   ~ 0
 I2C1_SDA
+Wire Wire Line
+	6200 3100 6750 3100
+Text Label 6750 3100 0    50   ~ 0
+BLE_nCS
+Wire Wire Line
+	6200 4200 6750 4200
+Text Label 6750 3500 0    50   ~ 0
+BLE_IRQ
 $EndSCHEMATC
