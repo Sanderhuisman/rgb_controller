@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:rgb_controller-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 6
 Title "Light Sensor"
 Date "2019-02-23"
 Rev ""
@@ -72,7 +72,7 @@ AR Path="/5C7262D1/5C7F5283" Ref="C?"  Part="1"
 AR Path="/5C7F522E/5C7F5283" Ref="C1"  Part="1" 
 F 0 "C1" H 5015 3746 50  0000 L CNN
 F 1 "100nF" H 5015 3655 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4938 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4938 3550 50  0001 C CNN
 F 3 "~" H 4900 3700 50  0001 C CNN
 	1    4900 3700
 	1    0    0    -1  

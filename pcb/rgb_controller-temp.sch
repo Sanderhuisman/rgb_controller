@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:rgb_controller-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 3 6
 Title "Temperature sensor"
 Date "2019-02-23"
 Rev ""
@@ -117,7 +117,7 @@ AR Path="/5C709274" Ref="C?"  Part="1"
 AR Path="/5C708F8B/5C709274" Ref="C9"  Part="1" 
 F 0 "C9" H 6965 4546 50  0000 L CNN
 F 1 "100nF" H 6965 4455 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6888 4350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6888 4350 50  0001 C CNN
 F 3 "~" H 6850 4500 50  0001 C CNN
 	1    6850 4500
 	1    0    0    -1  
@@ -153,7 +153,7 @@ U 1 1 5C7A312B
 P 5450 3850
 F 0 "R21" H 5520 3896 50  0000 L CNN
 F 1 "10K" H 5520 3805 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 5380 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5380 3850 50  0001 C CNN
 F 3 "~" H 5450 3850 50  0001 C CNN
 	1    5450 3850
 	1    0    0    -1  

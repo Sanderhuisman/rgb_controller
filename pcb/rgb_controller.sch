@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:rgb_controller-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 6
 Title "Overview"
 Date "2019-02-23"
 Rev ""
@@ -14,18 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 "Author: Sander Huisman"
 $EndDescr
-$Sheet
-S 6700 2500 700  1050
-U 5C6DADA9
-F0 "BLE" 50
-F1 "rgb_controller-ble.sch" 50
-F2 "BLE_nRESET" I L 6700 3350 50 
-F3 "BLE_nCS" I L 6700 3150 50 
-F4 "SPI_MOSI" I L 6700 2850 50 
-F5 "SPI_MISO" O L 6700 2950 50 
-F6 "SPI_CLK" I L 6700 2750 50 
-F7 "BLE_IRQ" O L 6700 3250 50 
-$EndSheet
 $Comp
 L power:+3V3 #PWR06
 U 1 1 5C71583F
@@ -73,18 +61,6 @@ F12 "LED_G" O L 4850 3950 50
 F13 "LED_B" O L 4850 4050 50 
 F14 "LED_W" O L 4850 4150 50 
 $EndSheet
-Wire Wire Line
-	6300 2950 6700 2950
-Wire Wire Line
-	6700 2850 6300 2850
-Wire Wire Line
-	6700 2750 6300 2750
-Wire Wire Line
-	6700 3150 6300 3150
-Wire Wire Line
-	6700 3250 6300 3250
-Wire Wire Line
-	6700 3350 6300 3350
 $Sheet
 S 6700 3750 700  550 
 U 5C708F8B
